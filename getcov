@@ -40,7 +40,8 @@ exclude_data()
 generate_report()
 {
     "${LCOV_PATH}/genhtml" --output-directory . ${LCOV_INFO}
-    mv index.html $DIR
+    cd ..
+	mv lcov $DIR
 }
 
 remove_old_report
